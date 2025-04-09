@@ -1,36 +1,198 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Absolutely! Here's your **fully updated, production-ready `README.md`**, incorporating:
 
-## Getting Started
+- Tailwind v4+ setup
+- MUI + Tailwind usage
+- `styles.css` import from `dist`
+- Installation, usage, contribution, and more
+- Designed to copy-paste directly into your repo
 
-First, run the development server:
+---
+
+```markdown
+# 🐻 Bearish UI Library
+
+**Bearish UI** is a modular, reusable, and style-consistent React component library built using [Tailwind CSS v4+](https://tailwindcss.com/) and [Material UI](https://mui.com/). It provides essential building blocks for modern frontend development.
+
+---
+
+## 📦 Installation
+
+Install the package via npm:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install @erenyeager13/bearish-ui-lib
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Or with yarn:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+yarn add @erenyeager13/bearish-ui-lib
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## ⚡️ Usage
 
-To learn more about Next.js, take a look at the following resources:
+In your application entry (e.g., `_app.tsx`, `layout.tsx`, or `page.tsx`), make sure to import the **compiled Tailwind CSS**:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```tsx
+import '@erenyeager13/bearish-ui-lib/dist/styles.css';
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Then use the components:
 
-## Deploy on Vercel
+```tsx
+import { Button } from '@erenyeager13/bearish-ui-lib';
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+export default function Home() {
+  return (
+    <div className="p-8">
+      <Button onClick={() => alert('Hello World!')}>
+        Click Me
+      </Button>
+    </div>
+  );
+}
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🧠 What’s Inside
+
+- ✅ Tailwind CSS 4.1+ (JIT mode, zero config)
+- ✅ MUI v5 for accessibility and robust UI behavior
+- ✅ TypeScript support with full typings
+- ✅ Precompiled global styles (`styles.css`)
+- ✅ Tree-shakable components
+
+---
+
+## 🧱 Components
+
+### `Button`
+
+A wrapped version of MUI Button with Tailwind-enhanced utility styling.
+
+```tsx
+<Button className="bg-gradient-to-r from-purple-500 to-pink-500 hover:scale-105 transition">
+  Press Me
+</Button>
+```
+
+#### Props
+
+| Prop       | Type         | Description                     |
+|------------|--------------|---------------------------------|
+| `children` | `ReactNode`  | Content inside the button       |
+| `onClick`  | `() => void` | Optional click handler          |
+| `className`| `string`     | Additional Tailwind/MUI classes |
+
+Supports all props from MUI’s native `<Button />`.
+
+---
+
+## 🎨 Tailwind + CSS Integration
+
+Bearish UI uses Tailwind CSS 4+, prebuilt and compiled into:
+
+```ts
+import '@erenyeager13/bearish-ui-lib/dist/styles.css';
+```
+
+You **do not need** to configure Tailwind in your host app unless you want to extend the design system.
+
+---
+
+## 📁 Project Structure
+
+```
+bearish-ui-lib/
+├── dist/                 # Compiled output
+│   ├── components/       # JS + .d.ts
+│   └── styles.css        # Compiled Tailwind CSS
+├── src/
+│   └── app/components/   # Source components
+├── public/               # Icons/assets
+├── postcss.config.mjs
+├── package.json
+├── tsconfig.json
+└── README.md
+```
+
+---
+
+## 🛠 Scripts
+
+In your consuming app:
+
+```json
+"scripts": {
+  "dev": "next dev",
+  "build": "next build",
+  "start": "next start"
+}
+```
+
+If you want to build the library manually:
+
+```bash
+npm run build
+# or
+yarn build
+```
+
+This compiles TS into `dist/` and generates `styles.css`.
+
+---
+
+## ✨ Roadmap
+
+- [x] Component packaging with MUI + Tailwind
+- [x] Precompiled global styles
+- [ ] Input, Modal, Select, TextArea components
+- [ ] Storybook or Nextra docs
+- [ ] Theme support (light/dark mode)
+- [ ] Variant system (e.g., primary, ghost, destructive)
+
+---
+
+## 🤝 Contributing
+
+Want to contribute?
+
+1. Fork the repo
+2. Create a branch: `git checkout -b feature/my-component`
+3. Add your changes
+4. Run `npm run build` to verify output
+5. Commit and open a PR 🙌
+
+---
+
+## 🧠 FAQ
+
+### Does this require Tailwind in my app?
+
+No, Tailwind is precompiled. All necessary styles are inside `dist/styles.css`.
+
+### Can I customize styles?
+
+Yes! Use `className` prop and Tailwind utility classes to customize components.
+
+### Do components support server components?
+
+Yes. All components are client-safe but can be used in hybrid SSG/SSR environments.
+
+---
+
+## 📝 License
+
+MIT © 2025 [@erenyeager13](https://www.npmjs.com/~erenyeager13)
+
+---
+
+**Build fast. Build bold. Build Bearish. 🐻**
+```
+
+---
+
+Let me know if you'd like a matching `package.json` example, `LICENSE`, or `CHANGELOG.md` too.
