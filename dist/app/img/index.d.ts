@@ -8,4 +8,5 @@ import TimeLineIcon from "./calendar-2.svg";
 import ReportIcon from "./chart-square.svg";
 import ArrowUpRight from "./arrow-up-right.svg";
 import ArrowDownRight from "./arrow-down-right.svg";
+export * from "./iconSVG_Raw";
 export { SideBarIcon, SearchIcon, CommondSqaureIcon, DashBoardHome, SettingsIcon, DocumentTextIcon, TimeLineIcon, ReportIcon, ArrowUpRight, ArrowDownRight };
