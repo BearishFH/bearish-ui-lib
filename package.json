@@ -1,6 +1,6 @@
 {
   "name": "@erenyeager13/bearish-ui-lib",
-  "version": "0.1.7",
+  "version": "0.1.9",
   "private": false,
   "publishConfig": {
     "access": "public"
@@ -9,7 +9,7 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "tsc --project tsconfig.build.json",
+    "build": "tsc --project tsconfig.build.json && node copy-assets.mjs",
     "start": "next start",
     "lint": "next lint",
     "build:css": "postcss src/styles/tailwind.css -o dist/styles.css"
@@ -18,7 +18,9 @@
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
     "@mui/material": "^7.0.1",
-    "next": "15.2.5"
+    "fs": "^0.0.1-security",
+    "next": "15.2.5",
+    "path": "^0.12.7"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
