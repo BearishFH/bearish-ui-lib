@@ -15,6 +15,7 @@
     "build:css": "postcss src/styles/tailwind.css -o dist/styles.css"
   },
   "dependencies": {
+    "@emotion/cache": "^11.14.0",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
     "@mui/material": "^7.0.1",
@@ -50,6 +51,14 @@
   ],
   "author": "ranjit at saliba",
   "license": "ISC",
+  "files": [
+    "dist",
+    "app/components",
+    "app/img"
+  ],
+  "sideEffects": [
+    "dist/styles.css"
+  ],
   "bugs": {
     "url": "https://github.com/ranjit95Ashura/bearish-ui-lib/issues"
   },

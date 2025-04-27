@@ -1,1 +1,156 @@
 @import "tailwindcss";
+
+/* === Bearish UI Default Component Styles (Tailwind v4, tw- prefix) === */
+
+/* BUTTONS */
+.tw-btn-bearish {
+  @apply tw-bg-gradient-to-r tw-from-pink-500 tw-via-red-500 tw-to-yellow-500 tw-text-white tw-px-8 tw-py-4 tw-text-lg tw-rounded-full tw-shadow-2xl tw-font-extrabold tw-transition-transform tw-duration-300 tw-ease-in-out hover:tw-scale-110 active:tw-scale-95 focus:tw-ring-4 focus:tw-ring-yellow-300;
+}
+.tw-btn-primary {
+  @apply tw-bg-blue-600 tw-text-white tw-font-semibold tw-px-5 tw-py-2 tw-rounded-lg hover:tw-bg-blue-700 focus:tw-ring-2 focus:tw-ring-blue-300;
+}
+.tw-btn-secondary {
+  @apply tw-bg-gray-700 tw-text-white tw-font-semibold tw-px-5 tw-py-2 tw-rounded-lg hover:tw-bg-gray-800 focus:tw-ring-2 focus:tw-ring-gray-400;
+}
+.tw-btn-success {
+  @apply tw-bg-green-600 tw-text-white tw-font-semibold tw-px-5 tw-py-2 tw-rounded-lg hover:tw-bg-green-700 focus:tw-ring-2 focus:tw-ring-green-300;
+}
+.tw-btn-warning {
+  @apply tw-bg-yellow-500 tw-text-black tw-font-semibold tw-px-5 tw-py-2 tw-rounded-lg hover:tw-bg-yellow-600 focus:tw-ring-2 focus:tw-ring-yellow-300;
+}
+.tw-btn-danger {
+  @apply tw-bg-red-600 tw-text-white tw-font-semibold tw-px-5 tw-py-2 tw-rounded-lg hover:tw-bg-red-700 focus:tw-ring-2 focus:tw-ring-red-300;
+}
+.tw-btn-outline {
+  @apply tw-bg-transparent tw-border tw-border-blue-600 tw-text-blue-600 tw-font-semibold tw-px-5 tw-py-2 tw-rounded-lg hover:tw-bg-blue-50;
+}
+.tw-btn-ghost {
+  @apply tw-bg-transparent tw-text-blue-600 tw-font-semibold tw-px-5 tw-py-2 tw-rounded-lg hover:tw-bg-blue-100;
+}
+.tw-btn-link {
+  @apply tw-bg-transparent tw-text-blue-700 tw-underline tw-font-semibold tw-px-2 tw-py-1 hover:tw-text-blue-900;
+}
+.tw-btn-sm {
+  @apply tw-text-sm tw-px-3 tw-py-1;
+}
+.tw-btn-lg {
+  @apply tw-text-xl tw-px-8 tw-py-4;
+}
+.tw-btn-block {
+  @apply tw-w-full tw-block;
+}
+.tw-btn-disabled {
+  @apply tw-opacity-50 tw-cursor-not-allowed;
+}
+
+/* ALERTS */
+.tw-alert-info {
+  @apply tw-bg-blue-100 tw-text-blue-800 tw-p-4 tw-rounded-lg tw-border-l-4 tw-border-blue-400;
+}
+.tw-alert-success {
+  @apply tw-bg-green-100 tw-text-green-800 tw-p-4 tw-rounded-lg tw-border-l-4 tw-border-green-400;
+}
+.tw-alert-warning {
+  @apply tw-bg-yellow-100 tw-text-yellow-800 tw-p-4 tw-rounded-lg tw-border-l-4 tw-border-yellow-400;
+}
+.tw-alert-danger {
+  @apply tw-bg-red-100 tw-text-red-800 tw-p-4 tw-rounded-lg tw-border-l-4 tw-border-red-400;
+}
+
+/* CARDS */
+.tw-card {
+  @apply tw-bg-white tw-shadow-lg tw-rounded-xl tw-p-6 tw-border tw-border-gray-100;
+}
+.tw-card-header {
+  @apply tw-font-bold tw-text-lg tw-mb-2;
+}
+.tw-card-body {
+  @apply tw-mb-2;
+}
+.tw-card-footer {
+  @apply tw-pt-2 tw-border-t tw-border-gray-100;
+}
+
+/* BADGES */
+.tw-badge {
+  @apply tw-inline-block tw-px-3 tw-py-1 tw-text-xs tw-font-bold tw-rounded-full tw-bg-gray-200 tw-text-gray-800;
+}
+.tw-badge-success {
+  @apply tw-bg-green-500 tw-text-white;
+}
+.tw-badge-warning {
+  @apply tw-bg-yellow-400 tw-text-black;
+}
+.tw-badge-danger {
+  @apply tw-bg-red-500 tw-text-white;
+}
+
+/* INPUTS */
+.tw-input {
+  @apply tw-px-4 tw-py-2 tw-border tw-border-gray-300 tw-rounded-lg tw-bg-white focus:tw-outline-none focus:tw-border-blue-500;
+}
+.tw-input-focus {
+  @apply focus:tw-border-blue-600 focus:tw-ring-2 focus:tw-ring-blue-200;
+}
+.tw-input-error {
+  @apply tw-border-red-500 tw-bg-red-50;
+}
+
+/* DIVIDER */
+.tw-divider {
+  @apply tw-border-t tw-border-gray-200 tw-my-4;
+}
+
+/* AVATAR */
+.tw-avatar {
+  @apply tw-inline-block tw-rounded-full tw-bg-gray-200 tw-w-10 tw-h-10 tw-object-cover;
+}
+
+/* CHIP */
+.tw-chip {
+  @apply tw-inline-flex tw-items-center tw-px-3 tw-py-1 tw-rounded-full tw-bg-gray-100 tw-text-gray-800 tw-text-xs tw-font-medium;
+}
+
+/* TOOLTIP */
+.tw-tooltip {
+  @apply tw-bg-black tw-text-white tw-px-2 tw-py-1 tw-rounded tw-text-xs tw-shadow-lg;
+}
+
+/* MODAL */
+.tw-modal {
+  @apply tw-fixed tw-inset-0 tw-bg-black tw-bg-opacity-50 tw-flex tw-items-center tw-justify-center;
+}
+.tw-modal-content {
+  @apply tw-bg-white tw-rounded-lg tw-shadow-xl tw-p-8;
+}
+
+/* OVERLAY */
+.tw-overlay {
+  @apply tw-fixed tw-inset-0 tw-bg-black tw-bg-opacity-30;
+}
+
+/* NAVBAR */
+.tw-navbar {
+  @apply tw-bg-white tw-shadow tw-px-6 tw-py-3 tw-flex tw-items-center tw-justify-between;
+}
+
+/* SIDEBAR */
+.tw-sidebar {
+  @apply tw-bg-gray-800 tw-text-white tw-w-64 tw-h-full tw-fixed tw-top-0 tw-left-0 tw-flex tw-flex-col tw-p-4;
+}
+
+/* FOOTER */
+.tw-footer {
+  @apply tw-bg-gray-100 tw-text-gray-600 tw-px-6 tw-py-4 tw-text-center;
+}
+
+/* TABLE */
+.tw-table {
+  @apply tw-min-w-full tw-bg-white tw-border tw-rounded-lg;
+}
+.tw-table-row {
+  @apply tw-border-b tw-border-gray-200;
+}
+.tw-table-header {
+  @apply tw-bg-gray-50 tw-font-bold;
+}
