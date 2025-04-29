@@ -1,0 +1,6 @@
+export * from './TaskSquareIcon/TaskSquareIcon'
+export * from './ClipboardTickFullCardIcon/ClipboardTickFullCardIcon'
+export * from './EditIcon/EditIcon'
+export * from './DocumentDownloadIcon/DocumentDownloadIcon'
+export * from './DocumentUploadIcon/DocumentUploadIcon'
+export * from './DocumentDocsIcon/DocumentDocsIcon'

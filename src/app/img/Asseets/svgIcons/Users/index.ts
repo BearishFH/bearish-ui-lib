@@ -1,0 +1,5 @@
+export * from './ProfileIcon/ProfileIcon'
+export * from './ProfileTwoUserIcon/ProfileTwoUserIcon'
+export * from './UserOctagonIcon/UserOctagonIcon'
+export * from './UserCirlceAddIcon/UserCirlceAddIcon'
+export * from './UserAddIcon/UserAddIcon'

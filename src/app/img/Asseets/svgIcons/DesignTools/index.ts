@@ -1,0 +1,6 @@
+export * from './CopySuccessIcon/CopySuccessIcon'
+export * from './CopyIcon/CopyIcon'
+export * from './ColorsSquareIcon/ColorsSquareIcon'
+export * from './PenCloseIcon/PenCloseIcon'
+export * from './BrushTwoToolsIcon/BrushTwoToolsIcon'
+export * from './ColorSwatchIcon/ColorSwatchIcon'

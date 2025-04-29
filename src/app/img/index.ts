@@ -9,7 +9,7 @@ import ReportIcon from "./chart-square.svg";
 import ArrowUpRight from "./arrow-up-right.svg";
 import ArrowDownRight from "./arrow-down-right.svg";
 export * from "./iconSVG_Raw"
-
+export * from "./Asseets"
 export {
     SideBarIcon,
     SearchIcon,

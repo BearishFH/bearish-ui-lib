@@ -1,7 +1,7 @@
 import type { BearishIconProps } from "../../types/bearishIcon";
 import React from "react";
 
-export const SidebarLeftIcon: React.FC<BearishIconProps> = ({
+export const SidebarLeftIcon_S: React.FC<BearishIconProps> = ({
     className = "",
     style,
     ...props
@@ -176,7 +176,7 @@ export const SearchIcon: React.FC<BearishIconProps> = ({
         />
     </svg>
 );
-export const HomeIcon: React.FC<BearishIconProps> = ({
+export const HomeIcon_S: React.FC<BearishIconProps> = ({
     className = "",
     style,
     ...props

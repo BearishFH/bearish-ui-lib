@@ -1,0 +1,5 @@
+export * from './TeamsIcon/TeamsIcon'
+export * from './MeetIcon/MeetIcon'
+export * from './GoogleCalendarIcon/GoogleCalendarIcon'
+export * from './OutlookCalendarIcon/OutlookCalendarIcon'
+export * from './BearishLogoIcon/BearishLogoIcon'
